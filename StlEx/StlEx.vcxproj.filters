@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="StlEx.cpp" />
+    <ClCompile Include="cs\CCriticalSection.cpp">
+      <Filter>cs</Filter>
+    </ClCompile>
+    <ClCompile Include="cs\CCriticalSectionLockGuard.cpp">
+      <Filter>cs</Filter>
+    </ClCompile>
+    <ClCompile Include="logger\CLoggerToConsole.cpp">
+      <Filter>logger</Filter>
+    </ClCompile>
+    <ClCompile Include="logger\CLoggerToFile.cpp">
+      <Filter>logger</Filter>
+    </ClCompile>
+    <ClCompile Include="logger\CLogInfo.cpp">
+      <Filter>logger</Filter>
+    </ClCompile>
+    <ClCompile Include="logger\Ilogger.cpp">
+      <Filter>logger</Filter>
+    </ClCompile>
+    <ClCompile Include="handle\CEvent.cpp">
+      <Filter>handle</Filter>
+    </ClCompile>
+    <ClCompile Include="handle\CHandle.cpp">
+      <Filter>handle</Filter>
+    </ClCompile>
+    <ClCompile Include="handle\CLibrary.cpp">
+      <Filter>handle</Filter>
+    </ClCompile>
+    <ClCompile Include="handle\CProcess.cpp">
+      <Filter>handle</Filter>
+    </ClCompile>
+    <ClCompile Include="handle\CRegistry.cpp">
+      <Filter>handle</Filter>
+    </ClCompile>
+    <ClCompile Include="misc\CCounter.cpp">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="misc\CCounterScoped.cpp">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="misc\CGuid.cpp">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="misc\CPathStorage.cpp">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="misc\misc_feature.cpp">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="io\IAsyncIo.cpp">
+      <Filter>io</Filter>
+    </ClCompile>
+    <ClCompile Include="io\iocp\CAsyncOperation.cpp">
+      <Filter>io\iocp</Filter>
+    </ClCompile>
+    <ClCompile Include="io\iocp\CIocp.cpp">
+      <Filter>io\iocp</Filter>
+    </ClCompile>
+    <ClCompile Include="io\iocp\CThreadPool.cpp">
+      <Filter>io\iocp</Filter>
+    </ClCompile>
+    <ClCompile Include="io\iocp\CThreadPoolWorker.cpp">
+      <Filter>io\iocp</Filter>
+    </ClCompile>
+    <ClCompile Include="pipe\IPipe.cpp">
+      <Filter>pipe</Filter>
+    </ClCompile>
+    <ClCompile Include="pipe\client\CNPipeClient.cpp">
+      <Filter>pipe\client</Filter>
+    </ClCompile>
+    <ClCompile Include="pipe\server\IListenNPipeClient.cpp">
+      <Filter>pipe\server</Filter>
+    </ClCompile>
+    <ClCompile Include="pipe\server\IListenPipe.cpp">
+      <Filter>pipe\server</Filter>
+    </ClCompile>
+    <ClCompile Include="pipe\server\IListenPipeClient.cpp">
+      <Filter>pipe\server</Filter>
+    </ClCompile>
+    <ClCompile Include="filesystem\CDirectory.cpp">
+      <Filter>filesystem</Filter>
+    </ClCompile>
+    <ClCompile Include="filesystem\CFile.cpp">
+      <Filter>filesystem</Filter>
+    </ClCompile>
+    <ClCompile Include="filesystem\CFileSystemObject.cpp">
+      <Filter>filesystem</Filter>
+    </ClCompile>
+    <ClCompile Include="exchange\CBufferExchange.cpp">
+      <Filter>exchange</Filter>
+    </ClCompile>
+    <ClCompile Include="exchange\ISerializable.cpp">
+      <Filter>exchange</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="StlEx.h" />
+    <ClInclude Include="cs\CCriticalSection.h">
+      <Filter>cs</Filter>
+    </ClInclude>
+    <ClInclude Include="cs\CCriticalSectionLockGuard.h">
+      <Filter>cs</Filter>
+    </ClInclude>
+    <ClInclude Include="logger\CLoggerToConsole.h">
+      <Filter>logger</Filter>
+    </ClInclude>
+    <ClInclude Include="logger\CLoggerToFile.h">
+      <Filter>logger</Filter>
+    </ClInclude>
+    <ClInclude Include="logger\CLogInfo.h">
+      <Filter>logger</Filter>
+    </ClInclude>
+    <ClInclude Include="logger\Ilogger.h">
+      <Filter>logger</Filter>
+    </ClInclude>
+    <ClInclude Include="handle\CEvent.h">
+      <Filter>handle</Filter>
+    </ClInclude>
+    <ClInclude Include="handle\CHandle.h">
+      <Filter>handle</Filter>
+    </ClInclude>
+    <ClInclude Include="handle\CLibrary.h">
+      <Filter>handle</Filter>
+    </ClInclude>
+    <ClInclude Include="handle\CProcess.h">
+      <Filter>handle</Filter>
+    </ClInclude>
+    <ClInclude Include="handle\CRegistry.h">
+      <Filter>handle</Filter>
+    </ClInclude>
+    <ClInclude Include="misc\CCounter.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="misc\CCounterScoped.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="misc\CGuid.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="misc\CInterlockedList.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="misc\CPathStorage.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="misc\CThreadTls.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="misc\misc_feature.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="io\IAsyncIo.h">
+      <Filter>io</Filter>
+    </ClInclude>
+    <ClInclude Include="io\iocp\CAsyncOperation.h">
+      <Filter>io\iocp</Filter>
+    </ClInclude>
+    <ClInclude Include="io\iocp\CIocp.h">
+      <Filter>io\iocp</Filter>
+    </ClInclude>
+    <ClInclude Include="io\iocp\CThreadPool.h">
+      <Filter>io\iocp</Filter>
+    </ClInclude>
+    <ClInclude Include="io\iocp\CThreadPoolWorker.h">
+      <Filter>io\iocp</Filter>
+    </ClInclude>
+    <ClInclude Include="pipe\IPipe.h">
+      <Filter>pipe</Filter>
+    </ClInclude>
+    <ClInclude Include="pipe\client\CNPipeClient.h">
+      <Filter>pipe\client</Filter>
+    </ClInclude>
+    <ClInclude Include="pipe\server\IListenNPipeClient.h">
+      <Filter>pipe\server</Filter>
+    </ClInclude>
+    <ClInclude Include="pipe\server\IListenPipe.h">
+      <Filter>pipe\server</Filter>
+    </ClInclude>
+    <ClInclude Include="pipe\server\IListenPipeClient.h">
+      <Filter>pipe\server</Filter>
+    </ClInclude>
+    <ClInclude Include="filesystem\CDirectory.h">
+      <Filter>filesystem</Filter>
+    </ClInclude>
+    <ClInclude Include="filesystem\CFile.h">
+      <Filter>filesystem</Filter>
+    </ClInclude>
+    <ClInclude Include="filesystem\CFileSystemObject.h">
+      <Filter>filesystem</Filter>
+    </ClInclude>
+    <ClInclude Include="exchange\CBufferExchange.h">
+      <Filter>exchange</Filter>
+    </ClInclude>
+    <ClInclude Include="exchange\IExchangeData.h">
+      <Filter>exchange</Filter>
+    </ClInclude>
+    <ClInclude Include="exchange\ISerializable.h">
+      <Filter>exchange</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="cs">
+      <UniqueIdentifier>{334510a6-23d9-408e-adba-909b7c57a2a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="logger">
+      <UniqueIdentifier>{b5489df3-4a1c-4f8c-9fb7-e2dc5c613e85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="handle">
+      <UniqueIdentifier>{82c46fdc-ba46-4a4a-9049-fd35b15c4cb9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="misc">
+      <UniqueIdentifier>{310d146d-27e7-4d23-a9ab-f774eb1c6070}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="io">
+      <UniqueIdentifier>{f3cd789a-8939-4647-9a83-47ed16eb6980}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="io\iocp">
+      <UniqueIdentifier>{6bc14938-095d-4418-9689-902808f9b840}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pipe">
+      <UniqueIdentifier>{060e6879-6f06-4ae4-8577-628572a303be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pipe\server">
+      <UniqueIdentifier>{7f9fee93-ae02-4236-b72c-b65e99b30feb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pipe\client">
+      <UniqueIdentifier>{033ca0d6-a3dc-449b-b24c-007f07d83528}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="filesystem">
+      <UniqueIdentifier>{92e199bf-ffaf-4248-96f7-5a8727427a16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="exchange">
+      <UniqueIdentifier>{a766517e-9742-42cd-a1bf-68f17f127aeb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
