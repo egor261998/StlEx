@@ -37,7 +37,6 @@ CEvent::CEvent(
 	}
 }
 //------------------------------------------------------------------------------
-//------------------------------------------------------------------------------
 CEvent::CEvent(
 	const CHandle& handle) noexcept :
 	CHandle(handle)
@@ -65,7 +64,6 @@ std::error_code CEvent::cancel() const noexcept
 		ResetEvent(getHandle()) ? ERROR_SUCCESS : GetLastError(),
 		std::system_category());
 }
-//------------------------------------------------------------------------------
 //------------------------------------------------------------------------------
 CEvent& CEvent::operator=(
 	const CHandle& handle) noexcept

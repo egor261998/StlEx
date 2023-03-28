@@ -15,6 +15,21 @@ namespace stlex::handle
 		CLibrary() noexcept = default;
 	//--------------------------------------------------------------------------
 		/**
+		* деструктор.
+		*/
+		~CLibrary();
+	//--------------------------------------------------------------------------
+		CLibrary(const CLibrary&) noexcept = default;
+		CLibrary(CLibrary&&) noexcept = default;
+		CLibrary& operator=(const CLibrary&) = default;
+		CLibrary& operator=(CLibrary&&) noexcept = default;
+	//--------------------------------------------------------------------------
+	#pragma endregion
+
+	#pragma region Protected_Method
+	protected:
+	//--------------------------------------------------------------------------
+		/**
 		* загрузка динамической библиотеки.
 		* @param path - путь до библиотеки.
 		* @return - результат работы.
@@ -40,16 +55,6 @@ namespace stlex::handle
 			return getProcAddress(name, *(PVOID*)&address);
 		#pragma warning (default: 26493)
 		}		
-	//--------------------------------------------------------------------------
-		/**
-		* деструктор.
-		*/
-		~CLibrary();
-	//--------------------------------------------------------------------------
-		CLibrary(const CLibrary&) noexcept = default;
-		CLibrary(CLibrary&&) noexcept = default;
-		CLibrary& operator=(const CLibrary&) = default;
-		CLibrary& operator=(CLibrary&&) noexcept = default;
 	//--------------------------------------------------------------------------
 	#pragma endregion
 

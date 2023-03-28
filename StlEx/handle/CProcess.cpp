@@ -5,7 +5,7 @@ using CProcess = stlex::handle::CProcess;
 //------------------------------------------------------------------------------
 std::error_code CProcess::create(
 	const std::filesystem::path& processPath,
-	const std::wstring& commandLine,
+	const std::wstring_view& commandLine,
 	const DWORD dwCreationFlags)
 {
 	return create(
@@ -17,7 +17,7 @@ std::error_code CProcess::create(
 //------------------------------------------------------------------------------
 std::error_code CProcess::create(
 	const std::filesystem::path& processPath,
-	const std::wstring& commandLine,
+	const std::wstring_view& commandLine,
 	const std::filesystem::path& currentDirectoryPath,
 	const DWORD dwCreationFlags)
 {
@@ -29,7 +29,7 @@ std::error_code CProcess::create(
 	PROCESS_INFORMATION pi = {};
 	if (const auto ec = CreateProcess(
 		processPath.c_str(),
-		(LPWSTR)commandLine.c_str(),
+		(LPWSTR)commandLine.data(),
 		nullptr,
 		nullptr,
 		false,
@@ -52,8 +52,8 @@ std::error_code CProcess::create(
 	}
 	catch (const std::exception&)
 	{
-		const auto dwError = GetLastError();
-		TerminateProcess(pi.hProcess, dwError);
+		TerminateProcess(pi.hProcess, GetLastError());
+	
 		if (_hProcess.isValid())
 			_hProcess.close();
 		else
@@ -63,7 +63,8 @@ std::error_code CProcess::create(
 			_hThread.close();
 		else
 			CloseHandle(pi.hThread);
-		return std::error_code(dwError, std::system_category());
+
+		throw;
 	}
 
 	return {};

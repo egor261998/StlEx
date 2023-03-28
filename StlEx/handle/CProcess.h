@@ -22,7 +22,7 @@ namespace stlex::handle
 		*/
 		std::error_code create(
 			const std::filesystem::path& processPath,
-			const std::wstring& commandLine,
+			const std::wstring_view& commandLine,
 			const DWORD dwCreationFlags = 0);
 	//--------------------------------------------------------------------------
 		/**
@@ -35,7 +35,7 @@ namespace stlex::handle
 		*/
 		std::error_code create(
 			const std::filesystem::path& processPath,
-			const std::wstring& commandLine,
+			const std::wstring_view& commandLine,
 			const std::filesystem::path& currentDirectoryPath,
 			const DWORD dwCreationFlags);
 	//--------------------------------------------------------------------------
